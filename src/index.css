@@ -1,0 +1,610 @@
+/* General     background: #202020;
+   Header     background: #202020;
+ .box{
+    height: 200px;
+    width: 200px;
+    background: #333533;
+}
+
+font-family: 'Dancing Script', cursive;
+font-family: 'Epilogue', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ /* Navigation styling */
+.navbar{
+    width: 100vw;
+    position: absolute;
+}
+body{
+    background: #202020;
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+}
+.header{
+    position: fixed;
+    background: #ffd100;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    font-size: 2rem;
+    padding: 0 0.5rem;
+    align-items: center;
+    width: 100vw;
+    margin-top: 0;
+}
+.nav{
+   display: none;
+}
+.menu{
+    margin-right: 1rem;
+}
+.menu button svg{
+   background: #ffd100;
+   height: 30px;
+   color: #202020;
+}
+.navigation-off{
+    position: fixed;
+    top: 0;
+    left: -300px;  
+    width: 250px;
+    background: #333533;
+    height: 100vh;
+    padding-left: 2rem;
+}
+.navigation{
+    position: fixed;
+    top: 51px;
+    right: 0px;  
+    width: 250px;
+    background: #333533;
+    height: 100vh;
+    padding-left: 2rem;  
+}   
+.navigation ul{
+    list-style: none;
+}
+.navigation ul li{
+   padding-top: 3rem;
+}
+.navigation a{
+    color: #ffd100; 
+    text-decoration: none;
+    font-size: 2rem;
+}
+.navigation .scroll_btn button{
+    margin-top: 2rem;
+    height: 2rem;
+    background: #ffd100;
+    width: 4rem;
+    border: none;
+    margin-left: 5rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+.navigation .scroll_btn button a{
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* Home styling */
+
+.home{
+    padding-top: 60px;
+    color: #ffd100;
+    height: 100vh;
+}
+.social_acct{
+    display: none;
+}
+.content{
+    display: block;
+    width: 100%;
+    margin-left: 1rem;
+    margin-top: 20%;
+    line-height: 4rem;
+}
+
+#paragraph_one{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+#paragraph_two{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+#paragraph_three{
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+#paragraph_four{
+    font-size: 1.5rem;
+}
+.hire_btn{
+    background: #ffd100;
+    height: 2.3rem;
+    border: none;
+    width: 5.5rem;
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: .3s ease-in-out;
+}
+.hire_btn a{
+    text-decoration: none;
+    color: #fff;
+}
+.explore{
+    padding-top: 6rem;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2rem;
+}
+
+
+/* About page */
+.about{
+    color: #acacac;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    line-height: 3rem;
+    gap: 15px;
+    padding-left: 1rem;
+}
+.about .tag{
+    font-size: 1rem;
+    color: #fff;
+}
+
+#about{
+    color: #ffd100;
+    padding-top: 4rem;
+    text-align: center;
+    font-size: 2rem;
+}
+#me{
+    color: #fff;
+}
+#info{
+    color: #ffd100;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 1.4rem; 
+}
+#skill{
+    color: #ffd100;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+.skill_style{
+    display: flex;
+    justify-content: space-between;
+    margin:0 1rem;
+}
+.skill_style .progress{
+    color: #ffd100;
+}
+
+.skill_style .progress progress{
+    width: 10rem;
+}
+.skill_style .progress h5{
+    padding-top: 1.5rem;
+}
+progress::-webkit-progress-value,
+progress{
+    background-color: #ffd100;
+    height: 10px;
+}
+.return{
+   text-align: center;
+   padding-top: 1rem;
+}
+.return button{
+    background: #ffd100;
+    height: 2rem;
+    width: 3.5rem;
+    border: 0;
+    border-radius: 2px;
+    font-weight: 600;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    transition: .3s ease-in-out;
+}
+.return button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Styling Service page */
+.service{
+    padding-top: 4rem;
+}
+
+.service h1{
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+}
+.service h1 span{
+    color: #ffd100;
+}
+
+.service_row1 .card,
+.service_row2 .card_2{
+    height: 230px;
+    background: #333533;
+    width: 300px;
+    text-align: center;
+    margin:2rem auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.service_row1 .card h3,
+.service_row2 .card_2 h3{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #ffd100;
+}
+.service_row1 .card p,
+.service_row2 .card_2 p{
+    color: #fff;
+    font-size: 1rem;
+}
+.service_row1 .card .read_more,
+.service_row2 .card_2 .read_more{
+    background: #ffd100;
+    border: 0;
+    height: 2rem;
+    width: 6rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    transition: .3s ease-in-out;
+}
+.service_row1 .card .read_more a,
+.service_row2 .card_2 .read_more a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Styling Contact page */
+.contact{
+    padding-top: 4rem;
+}
+.contact h1{
+    color: #ffd100;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.contact h1 span{
+    color: #fff;
+}
+.form{
+    height: 500px;
+    width: 350px;
+    background: #333533;
+    margin: 1.5rem auto;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+label{
+    margin-left: 1rem;
+    color: #fff;
+}
+input{
+    height: 2.4rem;
+    width: 90%;
+    margin-left: 1rem;
+    border: none;
+    margin-top: 1rem;
+    background: #202020;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+input::placeholder{
+    padding-left: 1rem;
+}
+input:focus,
+textarea:focus{
+    outline: none;
+}
+textarea{
+    width: 90%;
+    margin-left: 1rem;
+    border: none;
+    margin-top: 1rem;
+    background: #202020;
+    color: #fff;
+}
+textarea::placeholder{
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+}
+.last_btn{
+    display: flex;
+    justify-content: center;
+}
+.contact button{
+    background: #ffd100;
+    height: 2.2rem;
+    width: 7rem;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    transition: .3s ease-in-out;
+}
+.address{
+    display: none;
+}
+
+/* Desktop version */
+@media (min-width: 680px) and (max-width: 800px) {
+    .social_acct{
+        display: block;
+        margin-right: 3rem;
+        padding-top: 1rem;
+    }
+    .social_acct a{
+        margin-left: 0.2rem;
+    }
+    .nav{
+        display: block;
+    }
+    .nav a{
+        text-decoration: none;
+        font-size: 1.3rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        color: #202020;
+        transition: .3s ease-in-out;
+    }
+
+    .nav a:hover{
+        color: #fff;
+        border-bottom: 2px solid #fff;
+    }
+
+    .menu,
+    .navigation,
+    .navigation-off{
+        display: none;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .home{
+        padding: 2px;
+    }
+    .content{
+        margin-top: 25vh;
+    }
+    .explore{
+        padding-top: 3.5rem;
+    }
+
+    .about{
+        font-size: 1rem;
+        padding-right: 1rem;
+    }
+    .about .tag{
+        font-size: 1.3rem;
+
+    }
+    .skill_style .progress progress{
+        width: 15rem;
+    }
+
+    .service_row1,
+    .service_row2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .service_row1 .card .read_more,
+    .service_row2 .card_2 .read_more{
+        margin-top: 2.5rem;
+    }
+    .address{
+        display: block;
+        color: #ffd100;
+        height: 500px;
+        width: 350px;
+        background: #333533;
+        margin: 0 auto;
+        border-radius: 15px;
+    }
+    .form{
+        margin-top: 0;
+        box-shadow: none;
+    }
+    .contact_style{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        background: #333533;
+        width: 95%;
+        gap: 10px;
+        height: 500px;
+        border-radius: 10px;
+        margin-left: 1rem;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+    .address .items{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 4rem;
+        text-align: center;
+    }
+    .address .items:nth-child(1){
+        padding-top: 2rem;
+    }
+    .address .items h5{
+        padding-bottom: 1rem;
+        font-size: 1.3rem;
+    }
+    .address .items p{
+        color: #fff;
+    }
+    .content button:hover,
+    .return button:hover,
+    .service_row1 .card button:hover,
+    .service_row2 .card_2 button:hover,
+    .last_btn button:hover{
+        background: #333533;
+        color: #ffd100;
+        transition: .3s ease-in-out;
+    }
+    
+
+}
+@media (min-width: 801px) {
+    .social_acct{
+        display: block;
+        margin-right: 3rem;
+        padding-top: 1rem;
+    }
+    .social_acct a{
+        margin-left: 0.2rem;
+    }
+    .nav{
+        display: block;
+    }
+    .nav a{
+        text-decoration: none;
+        font-size: 1.3rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        color: #202020;
+        transition: .3s ease-in-out;
+    }
+
+    .nav a:hover{
+        color: #fff;
+        border-bottom: 2px solid #fff;
+    }
+
+    .menu,
+    .navigation,
+    .navigation-off{
+        display: none;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .home{
+        padding: 2px;
+    }
+    .content{
+        margin-top: 25vh;
+    }
+    .explore{
+        padding-top: 3.5rem;
+    }
+
+    .about{
+        font-size: 1.3rem;
+        padding-right: 1rem;
+    }
+    .about .tag{
+        font-size: 1.6rem;
+
+    }
+    .skill_style .progress progress{
+        width: 25rem;
+    }
+
+    .service_row1,
+    .service_row2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .service_row2{
+        width: 100%;
+    }
+
+    .service_row2 .card_2{
+        width: 45%;
+        gap: 10px;
+    }
+    .service_row1 .card .read_more,
+    .service_row2 .card_2 .read_more{
+        margin-top: 2.5rem;
+    }
+    .address{
+        display: block;
+        color: #ffd100;
+        height: 500px;
+        width: 350px;
+        background: #333533;
+        margin: 0 auto;
+        border-radius: 15px;
+    }
+    .form{
+        margin-top: 0;
+        box-shadow: none;
+    }
+    .contact_style{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        background: #333533;
+        width: 48rem;
+        gap: 10px;
+        height: 500px;
+        border-radius: 10px;
+        margin: auto;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+    .address .items{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 4rem;
+        text-align: center;
+    }
+    .address .items:nth-child(1){
+        padding-top: 2rem;
+    }
+    .address .items h5{
+        padding-bottom: 1rem;
+        font-size: 1.3rem;
+    }
+    .address .items p{
+        color: #fff;
+    }
+    .content button:hover,
+    .return button:hover,
+    .service_row1 .card button:hover,
+    .service_row2 .card_2 button:hover,
+    .last_btn button:hover{
+        background: #333533;
+        color: #ffd100;
+        transition: .3s ease-in-out;
+    }
+    .last_btn button a{
+        text-decoration: none;
+        color: #fff;
+    }
+}
